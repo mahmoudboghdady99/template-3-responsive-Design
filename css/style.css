@@ -1,0 +1,205 @@
+/* 
+    ==================================
+              public styles
+    ==================================
+*/
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.n-style {
+    list-style: none;
+}
+/* 
+    ==================================
+              navbar styles
+    ==================================
+*/
+.navbar {
+    background: #fff;
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.navbar input, .navbar label {
+    position: absolute;
+    top: 11px;right: 25px;
+}
+.navbar input {
+    display: none;
+}
+.navbar label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 20px;
+    background-image: url(../images/navbar/open.png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.navbar input:checked ~ .ul-list {
+    display: block;
+
+}
+.navbar .logo {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 30px;
+}
+.ul-list {
+    width: 50%;
+    float: left;
+}
+
+.ul-list li {
+    display: inline-block;
+
+}
+.ul-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: transform 0.5s;
+    transform: scale(1, 1);
+}
+.navbar .ul-list .list-item a:hover {
+    color: #eb5424;
+    transform: scale(1.2, 1.2)
+}
+/* 
+    ==================================
+              Media Query for navbar styles
+    ==================================
+*/
+@media (min-width:992px){
+    .navbar label {
+        display: none;
+    }
+}
+@media (max-width:991px){
+    .navbar .logo {
+        width: 100%;
+        float: none;
+    }
+    .navbar .ul-list {
+        width: 100%;
+        float: none;
+        display: none;
+    }
+    .navbar .ul-list .list-item {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+/* 
+    ==================================
+              Home styles
+    ==================================
+*/
+.home {
+    /* height: 100vh; */
+    height: 100vh;
+    background-image: url(../images/home/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .home-title{
+    font-size: 60px;
+    font-weight: bold;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+.home .home-info{
+    font-size: 35px;
+    font-display: bold;
+    color: #eb5424;
+    margin-bottom: 20px;
+}
+.home .home-desc{
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.home .home-btn {
+    display: block;
+    width: 150px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    background: -webkit-linear-gradient(left, red, orange, white);
+    color: #222;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition:  color .5s;
+}
+.home .home-btn:hover {
+    background: -webkit-linear-gradient(right, red, orange, white);
+    color: #fff;
+}
+/* 
+    ==================================
+              Media Query for Home styles
+    ==================================
+*/
+@media (max-width:768px){
+    .home .home-title {
+        font-size: 40px;
+        color: #eb5424;
+    }
+    .home .home-info {
+        font-size: 25px;
+        color: royalblue;
+    }
+    .home .home-desc {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
